@@ -1,0 +1,15 @@
+---
+# Configuration file for MegaLinter
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation
+PRINT_ALPACA: false
+APPLY_FIXES: all # When active, APPLY_FIXES must also be defined as environment variable (in github/workflows/mega-linter.yml or other CI tool)
+# ENABLE_LINTERS:
+#   - DOCKERFILE_HADOLINT
+#   - MAKEFILE_CHECKMAKE
+PRINT_ALL_FILES: true
+FILTER_REGEX_EXCLUDE: '\.github|megalinter-reports|'
+SHOW_ELAPSED_TIME: true
+JSON_REPORTER: false
+GITHUB_STATUS_REPORTER: true
+PARALLEL: true
+# REPORT_OUTPUT_FOLDER: ${DEFAULT_WORKSPACE}/.megalinter-reports
